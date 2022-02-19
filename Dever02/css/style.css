@@ -1,0 +1,22 @@
+@charset "ISO-8859-1";
+
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: sans-serif;
+}
+
+h1 {
+	margin: 10px auto 10px auto;
+	text-align: center;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+}
+
+p {
+	margin: 10px auto 10px 20px;
+	font-size: 20px;
+	color: red;
+	 
+}

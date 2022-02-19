@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Dever 02 JS</title>
+</head>
+<body>
+	<main>
+		<section>
+			<h1>Dever Step 02 JavaScript</h1>
+
+
+		</section>
+		<script>
+		
+		//Crie um script, declara 4 variáveis e armazene cada informação no console.log().
+		var nome, sobrenome, idade, sexo ; 
+		nome = "Edmar";
+		sobrenome = "Ferreira Cardoso";
+		idade = 39;
+		sexo = "Masculino"
+
+		console.log("O meu nome é " + nome + " meu sobrenome é " + sobrenome);
+		console.log("Meu Sobrenome é " + sobrenome);
+		console.log("Tenho " + idade + " anos ");
+		console.log("Sexo " + sexo);
+
+		//Crie um script para ler 2 variáveis, concatene as informações e exiba na tela como alert().
+		
+		alert("Meu nome é " + nome);
+		alert("Tenho " + idade + " anos ");
+		
+		//Crie um script para calcular a área de um retângulo. O usuário deverá digitar o valor da base e altura. Exiba o valor da área no corpo da página.
+		
+		var n1, n2, area;
+
+		n1 = prompt("Digite a altura do retângulo: ");
+		n2 = prompt("Digite a largura do retângulo: ");
+		area = n1 * n2;
+		document.write(" <br> <p> A área retângulo é " + area + " m² . </p>");
+
+		//Faça um Script para exibir seu nome, nome do seu pai, nome da sua mãe e sua idade. Armazene cada informação em uma variável e exiba no console do navegador.
+		
+		var meuNome, nomePai, nomeMae, minhaIdade;
+
+		meuNome = "Edmar Ferreira Cardoso";
+		nomePai = "Divino Ferreira";
+		nomeMae = "Maria Helena";
+		minhaIdade = 39;
+
+		console.log("Meu nome é : " + meuNome + " . ");
+		console.log("Nome do pai é : " + nomePai + " . ");
+		console.log("Nome da mae é : " + nomeMae + " . ");
+		console.log("Minha idade é : " + idade + " . ");
+
+		//Faça um Script para armazenar 2 números inteiros. Exiba o resultado da subtração, multiplicação, divisão, módulo e exponenciação do primeiro valor em relação ao segundo valor. Exiba cada resultado com o comando alert().
+
+		var n1, n2, soma, sub, mult, divi, mod, exp;
+
+		n1 = 1;
+		n2 = 2;
+
+		soma = n1 + n2;
+		sub = n2 - n1;
+		mult = n1 * n2;
+		divi = n1 / n2;
+		mod = n1 % n2;
+		exp = n1 ** n2;
+
+		document.write("<p> A soma de 1 mais 2 é : " + soma + " . </p> ");
+		console.log("A soma de 1 mais 2 é : " + soma);
+		alert("Sendo n1 = " + n1 + " e n2 = " + n2 + " a soma, subtração, multiplicação, divisão, módulo e exponenciação são, repectivamente: " + soma + " , " + sub + " , " + mult + " , "  + divi + " , " + mod + " e " + exp + " . ");
+		
+		//Faça um script para armazenar 5 números. Exiba o valor de cada número, identificando-os ( ex: 1ª valor é xxx).Exiba também o resultado da subtração e multiplicação dos 5 números. Exiba cada resultado no console.
+		
+		var a1,b2,c3,d4,e5;
+
+		a1 = 1;
+		b2 = 2;
+		c3 = 3;
+		d4 = 4;
+		e5 = 5;
+
+		alert("O valor de cada número, na sequencia é: " + a1 + " , " + b2 + " , " + c3 + " , " + d4 + " , " + e5 + " . " + "A soma de todos eles é: " + (a1+b2+c3+d4+e5) + " e a multiplicação é: " + (a1*b2*c3*d4*e5) + ".");
+		
+		
+		//Faça um Script para calcular a área de um triangulo. Solicite os valores ao usuário e exiba o resultado no console.
+		
+		var base, altura, areaT;
+
+		base = prompt("Informe a base do triangulo: ");
+		altura = prompt("Informe a Altura: ");
+		areaT = (base * altura)/2;
+		console.log("A area do triangulo é " + areaT);
+		
+			
+		</script>
+	</main>
+</body>
+</html>
