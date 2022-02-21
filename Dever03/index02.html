@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +9,21 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Dever 3 questão 01.</title>
 </head>
+
 <body>
     <script>
-        var n1 = prompt( "Digite um número: " );
+
+        var n1 = prompt("Digite um número: ");
         var n2 = prompt("Favor digitar ou número: ");
 
-        var maior = n1;
-
-        if(n1 < maior){
-            maior = n1;
-        } 
-
-        if(n2 < maior){
-            maior = n2;
-        } 
-
-        document.write("O menor número digitato foi: " + maior);
-
+        if (n1 === n2) {
+            document.write("O números digitados são iguais");
+        } else if (n1>n2) {
+            document.write("O maior numero digitato foi: " + n1);
+        } else {
+            document.write("O maior numero digitato foi: " + n2);
+        }
     </script>
 </body>
+
 </html>

@@ -12,15 +12,17 @@
 
 <body>
     <script>
-           var n1 = prompt( "Digite um número: " );
+        var n1 = prompt("Digite um número: ");
         var n2 = prompt("Favor digitar ou número: ");
 
-        if (n1>n2){
-            document.write("O menor numero digitato foi: " + n2);
-        }else{
+        if (n1===n2) {
+            document.write("O números digitados são iguais")
+        } else if (n1<n2) {
             document.write("O menor numero digitato foi: " + n1);
+        } else{
+            document.write("O menor numero digitato foi: " + n2);
         }
-   </script>
+    </script>
 
 </body>
 
