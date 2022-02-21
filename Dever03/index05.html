@@ -16,8 +16,11 @@
 
         var nome1 = prompt("Digite um nome: ");
         var nome2 = prompt("Digite mais um nome: ");
+        var n1 = nome1.toLocaleLowerCase();
+        var n2 = nome2.toLocaleLowerCase();
+             
 
-        if (nome1 == nome2) {
+        if (n1 === n2) {
             document.write(" O " + nome1 + " é " + nome2 + " digitados são iguais. ");
         } else {
             document.write(" O " + nome1 + " é " + nome2 + " digitados são diferentes. ");
