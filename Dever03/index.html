@@ -11,23 +11,15 @@
 </head>
 
 <body>
-    
     <script>
-        var n1 = prompt( "Digite um número: " );
+           var n1 = prompt( "Digite um número: " );
         var n2 = prompt("Favor digitar ou número: ");
 
-        var menor = n1;
-
-        if(n1 > menor){
-            menor = n1;
-        } 
-
-        if(n2 > maior){
-            menor = n2;
-        } 
-
-        document.write("O maior numero digitato foi: " + menor);
-
+        if (n1>n2){
+            document.write("O menor numero digitato foi: " + n2);
+        }else{
+            document.write("O menor numero digitato foi: " + n1);
+        }
    </script>
 
 </body>
