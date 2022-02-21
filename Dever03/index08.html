@@ -7,13 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title>Dever 3 questão 01.</title>
+    <title>Dever 3 questão 08.</title>
 </head>
 
 <body>
-<script>
-    
-</script>
+
+    <script>
+
+        //Faça um Script para pedir o usuário o seu nome, idade, cidade de nascimento e UF. Escreva na página a seguinte frase: 
+
+        var maior
+        var nomeCompleto = prompt("Digite seu nome: ");
+        var idade = prompt("Qual a sua Idade: ");
+        var cidade = prompt("Qual é a cidade: ");
+        var estado = prompt("Qual e seu estado: ");
+
+
+        if (idade >= 18) {
+            maior = "maior de idade"
+        } else {
+            maior = "menor de idade"
+        }
+
+        document.write("Eu " + nomeCompleto + " , tenho " + idade + " , sou " + maior + " e nasci na cidade de " + cidade + " - " + estado + " . ");
+
+    </script>
 </body>
 
 </html>
