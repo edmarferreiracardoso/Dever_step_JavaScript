@@ -7,27 +7,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title>Dever 3 questão 08.</title>
+    <title>Desafio</title>
 </head>
 
 <body>
+<script>
 
-    <script>
+var n1, idade,nasc,res,mes, ano, dia, idadetotal;
+n1 = Number(prompt("Em que ano você nasceu? "));
+n2 = Number(prompt("Em que mês você nasceu? "));
+n3 = Number(prompt("Em que dia você nasceu? "));
+
+meshoje = 02
+anohoje = 2022
+diahoje = 21
+
+idade = 2022 - n1
+
+if (meshoje < n2) {
+    idadetotal = idade - 1
+} else if (meshoje == n2) {
+
+    if (diahoje > n3) {
+        idadetotal= idade - 1
+    }
+} else {
+idadetotal = idade
+}
+document.write("<p>Sua idade é " + idadetotal + "</p>")
+document.write("Você tem " + idadetotal + " anos." + "Nasceu em :" + n3 + "/" + n2 + "/" + n1);
+
+</script>
     
-	var dia = prompt("Digite o dia do seu nacimento: ");
-	var mes = prompt("Digite o mês em que vc naceu: ");
-	var ano = prompt("Digite o ano do seu nacimento: ");
-	var diaAtual = prompt("Qual dia é hoje: ");
-	var mesAtaul = prompt("Qual é o mês atual: ");
-	var anoAtual = prompt("Qual é o ano atual: ");
-	var idade = anoAtual - ano;
-
-	if(idade){
-		document.write("Você tem " + idade + " anos.")
-		}
-		
-	        
-    </script>
 </body>
 
 </html>
