@@ -14,29 +14,29 @@
     <script>
         //Faça um Script para ler 5 números, verifique qual é o maior valor.
 
-        var n1 = prompt("Digite um numero");
-        var n2 = prompt("Digite um numero");
-        var n3 = prompt("Digite um numero");
-        var n4 = prompt("Digite um numero");
-        var n5 = prompt("Digite um numero");
-        var menor
+        var n1 = prompt("Digite um número qualquer: ");
+        var n2 = prompt("Por favor digitar mais um número: ");
+        var n3 = prompt("Por favor digitar mais um número: ");
+        var n4 = prompt("Por favor digitar mais um número: ");
+        var n5 = prompt("Por favor digitar mais um número: ");
+        var maior
 
-        menor = n1;
+        maior = n1;
 
-        if (menor < n2) {
-            menor = n2
+        if (maior < n2) {
+            maior = n2
         }
-        if (menor < n3) {
-            menor = n3
+        if (maior < n3) {
+            maior = n3
         }
-        if (menor < n4) {
-            menor = n4
+        if (maior < n4) {
+            maior = n4
         }
-        if (menor < n5) {
-            menor = n5
+        if (maior < n5) {
+            maior = n5
         }
 
-        document.write(" O maior numero digitado foi o " + menor)
+        document.write(" <h1>O maior número digitado entre todos que você digitou é o (" + maior + ").</h1>")
 
     </script>
 </body>
