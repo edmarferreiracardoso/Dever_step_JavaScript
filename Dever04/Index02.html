@@ -17,10 +17,10 @@
 
         var vogal = prompt("Digite uma Letra: ");
 
-        if ((vogal == "a") || (vogal == "e") || (vogal == "i") || (vogal == "o") || (vogal == "u")) {
-            document.write("<h1>Voce digitou uma vogal</h1>");
+        if ((vogal === "a") || (vogal === "e") || (vogal === "i") || (vogal === "o") || (vogal === "u")) {
+            document.write("<h1>Você digitou uma vogal " + "(" + vogal + ").</h1>");
         } else {
-            document.write("<h1>A letra digitada nao se trata de um vogal</h1>");
+            document.write("<h1>Você não digitou uma vogal e sim uma consoante" + "(" + vogal + ").</h1>");
         }
 
     </script>
