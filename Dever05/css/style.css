@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-image: linear-gradient(to right, blue, transparent);
+    text-align: center;
+    width: 600px;
+    margin: 40px auto 0px auto;
+    border-radius: 10px;
+}
