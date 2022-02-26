@@ -20,7 +20,12 @@
         if ((vogal === "a") || (vogal === "e") || (vogal === "i") || (vogal === "o") || (vogal === "u")) {
             document.write("<h1>Você digitou uma vogal " + "(" + vogal + ").</h1>");
         } else {
-            document.write("<h1>Você não digitou uma vogal e sim uma consoante" + "(" + vogal + ").</h1>");
+            if ((vogal === "A") || (vogal === "E") || (vogal === "I") || (vogal === "O") || (vogal === "U")) {
+                document.write("<h1>Você digitou uma vogal " + "(" + vogal + ").</h1>");
+            } else {
+                document.write("<h1>Você não digitou uma vogal e sim uma consoante" + "(" + vogal + ").</h1>");
+            }
+
         }
 
     </script>

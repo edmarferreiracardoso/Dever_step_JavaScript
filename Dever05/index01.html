@@ -14,14 +14,20 @@
     <script>
         //Faça um Script para verificar se um caracter digitado é vogal (maiúsculo e minúsculo).
 
-        var caracter = prompt("Digite um caracter: ","Qualquer carecter");
+        var vogal = prompt("Digite uma Letra: ","Qualquer Letra");
 
-        if ((caracter == "a" || caracter == "A") || (caracter == "e" || caracter == "E") || (caracter == "i" || caracter == "I") || (caracter == "o" || caracter == "O") || (caracter == "u" || caracter == "U")){
-            document.write("<h1>O Caracter digitado é uma  vogal (" + caracter + "), Obrigado.</h1>");
+        if ((vogal === "a") || (vogal === "e") || (vogal === "i") || (vogal === "o") || (vogal === "u")) {
+            document.write("<h1>Você digitou uma vogal " + "(" + vogal + ").</h1>");
         } else {
-            document.write("<h1>O caracter digitado foi (" + caracter + "), este caracter não é uma vogal.</h1>");
+            if ((vogal === "A") || (vogal === "E") || (vogal === "I") || (vogal === "O") || (vogal === "U")) {
+                document.write("<h1>Você digitou uma vogal " + "(" + vogal + ").</h1>");
+            } else {
+                document.write("<h1>Você não digitou uma vogal e sim uma consoante" + "(" + vogal + ").</h1>");
+            }
+
         }
+
     </script>
 </body>
 
-</html>caracter
+</html>
