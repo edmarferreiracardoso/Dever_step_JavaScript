@@ -12,7 +12,40 @@
 
 <body>
     <script>
-        
+        //Faça um script para ler 6 números, verifique qual é o menor valor. ( if encadeado)
+
+        var n1 = prompt("digiti um mumero");
+        var n2 = prompt("digiti um mumero");
+        var n3 = prompt("digiti um mumero");
+        var n4 = prompt("digiti um mumero");
+        var n5 = prompt("digiti um mumero");
+        var n6 = prompt("digiti um mumero");
+
+        var maior = n1;
+
+        if (n2 >= maior) {
+            maior = n2;
+        } else {
+            if (n3 >= maior) {
+                maior = n3;
+            } else {
+                if (n4 >= maior) {
+                    maior = n4;
+                } else {
+                    if (n5 >= maior) {
+                        maior = n5;
+                    } else {
+                        if (n6 >= maior) {
+                            maior = n6;
+                        }
+                    }
+                }
+            }
+        }
+
+        document.write("o maior" + maior)
+
+
     </script>
 </body>
 

@@ -12,7 +12,29 @@
 
 <body>
     <script>
-        
+        //Faça um Script para verificar se um caracter digitado é um número entre 0 e 9 (analise como string).
+
+        let digito
+
+
+
+        digito = prompt("Divite um caracter: ")
+
+
+
+        if (digito == '1' || digito == '2' || digito == '3'
+            || digito == '4' || digito == '5' || digito == '6' || digito == '7'
+            || digito == '8' || digito == '9' || digito == '0') {
+
+            document.write("<p> Você digitou um número de 0 a 9.</p>")
+
+        } else {
+            document.write("<p> Você <strong>NÃO</strong> Digitou uma CONSOANTE. </p>")
+        }
+
+
+
+        document.write("<p>Você digitou " + digito + ".</p>")
     </script>
 </body>
 
