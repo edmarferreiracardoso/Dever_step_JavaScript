@@ -16,18 +16,25 @@
 
         var caracter = prompt("Digite um caracter", "Qualquer caracter");
 
-        if (digito == 'B' || digito == 'C' || digito == 'D' || digito == 'F'
-            || digito == 'G' || digito == 'H' || digito == 'J' || digito == 'L'
-            || digito == 'M' || digito == 'N' || digito == 'P' || digito == 'Q'
-            || digito == 'R' || digito == 'S' || digito == 'T' || digito == 'U'
-            || digito == 'V' || digito == 'X' || digito == 'Y' || digito == 'Z'
-            || digito == 'K') {
-
-            document.write("<p> Você digitou uma CONSOANTE.</p>")
+        if (caracter == 'B' || caracter == 'C' || caracter == 'D' || caracter == 'F'
+            || caracter == 'G' || caracter == 'H' || caracter == 'J' || caracter == 'L'
+            || caracter == 'M' || caracter == 'N' || caracter == 'P' || caracter == 'Q'
+            || caracter == 'R' || caracter == 'S' || caracter == 'T' || caracter == 'U'
+            || caracter == 'V' || caracter == 'X' || caracter == 'Y' || caracter == 'Z'
+            || caracter == 'K') {
+            document.write("<h1>O caracter (" + caracter + ") digitado, é uma consoante maiúscula.</h1>");
         } else {
-            document.write("<p> Você não Digitou uma CONSOANTE. </p>")
+            if (caracter == 'b' || caracter == 'c' || caracter == 'd' || caracter == 'f'
+                || caracter == 'g' || caracter == 'h' || caracter == 'j' || caracter == 'l'
+                || caracter == 'm' || caracter == 'n' || caracter == 'p' || caracter == 'q'
+                || caracter == 'r' || caracter == 's' || caracter == 't' || caracter == 'u'
+                || caracter == 'v' || caracter == 'x' || caracter == 'y' || caracter == 'z'
+                || caracter == 'k') {
+                document.write("<h1>O caracter (" + caracter + ") digitado, é uma consoante minúscula.</h1>");
+            } else {
+                document.write("<h1>O caracter (" + caracter + ") digitado, não é uma consoante.</h1>");
+            }
         }
-        document.write("<p>Você digitou " + digito + ".</p>")
 
 
     </script>
