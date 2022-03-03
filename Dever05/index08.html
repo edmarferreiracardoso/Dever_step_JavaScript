@@ -12,7 +12,39 @@
 
 <body>
     <script>
-        
+        /*Faça um script para verificar se um caracter digitado é uma vogal,
+         consoante, número ou pontuação ( 7 tipos). ( if encadeado)*/
+
+        var caracter = prompt("Digite qualquer coisa");
+
+        <script>
+
+
+
+            var digito
+            digito = prompt("Digite qualquer coisa: ").toUpperCase()
+
+            if ( digito >= 0 || digito < 0 ){
+                document.write("Você digitou um número.")
+            } else if (digito == 'B' || digito == 'C' || digito == 'D' || digito == 'F'
+            || digito == 'G' || digito == 'H' || digito == 'J' || digito == 'L' || digito == 'M'
+            || digito == 'N' || digito == 'P' || digito == 'Q' || digito == 'R' || digito == 'S'
+            || digito == 'T' || digito == 'U' || digito == 'V' || digito == 'X' || digito == 'Y'
+            || digito == 'Z' || digito == 'K'){document.write("Você digitou uma CONSOANTE.")
+
+            } else if (digito == 'A' || digito == 'E' || digito == 'I'
+            || digito == 'O' || digito == 'U'){
+
+                document.write("Você digitou uma VOGAL.")
+
+            } else if (digito == '.' || digito == ',' || digito == ';' || digito == '~' || digito == '^'){
+
+
+                document.write("Você digitou um tipo de pontuação.")
+            } else {
+                document.write("Você não digitou um número, uma consoante , uma vogal ou pontuação.")
+            }
+            document.write("<p>Você digitou: " + digito + ".</p>")
     </script>
 </body>
 
