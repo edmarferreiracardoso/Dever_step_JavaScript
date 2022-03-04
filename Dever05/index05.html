@@ -12,15 +12,43 @@
 
 <body>
     <script>
-        
+
         /*Faça um Script para pedir ao usuário um número de 1 a 7. Exiba o nome do dia da semana que corresponde 
         ao respectivo número. ( 1 – Domingo, 2 – Segunda-feira ...) ( if encadeado)*/
 
-        var dia = prompt("Digite um dia da semana (exemplo)"," 1 Domingo");
-        if(dia == 1){
-            document.write("Hoje é domingo")
+        var dia = prompt("Digite um número entre 1 a 7");
+
+        if (dia == 1) {
+            document.write("<h1>O número digitado corresponde ao dia de  Domingo.</h1>");
+        } else {
+            if (dia == 2) {
+                document.write("<h1>O número digitado corresponde ao dia de Segunda .</h1>");
+            } else {
+                if (dia == 3) {
+                    document.write("<h1>O número digitado corresponde ao dia de Terça.</h1>");
+                } else {
+                    if (dia == 4) {
+                        document.write("<h1>O número digitado corresponde ao dia de Quarta.</h1>");
+                    } else {
+                        if (dia == 5) {
+                            document.write("<h1>O número digitado corresponde ao dia de Quinta.</h1>");
+                        } else {
+                            if (dia == 6) {
+                                document.write("<h1>O número digitado corresponde ao dia de Sextou.</h1>");
+                            } else {
+                                if (dia == 7) {
+                                    document.write("<h1>O número digitado corresponde ao dia de Sábado.</h1>");
+                                } else {
+                                    document.write("<h1>O número digitado não corresponde a nenhum dia da semana.</h1>");
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
-         
+
+
     </script>
 </body>
 
