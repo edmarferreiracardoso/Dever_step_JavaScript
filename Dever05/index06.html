@@ -14,35 +14,38 @@
     <script>
         //Faça um script para ler 6 números, verifique qual é o menor valor. ( if encadeado)
 
-        var n1 = prompt("digiti um mumero");
-        var n2 = prompt("digiti um mumero");
-        var n3 = prompt("digiti um mumero");
-        var n4 = prompt("digiti um mumero");
-        var n5 = prompt("digiti um mumero");
-        var n6 = prompt("digiti um mumero");
+        var n1 = prompt("digiti 1º mumero");
+        var n2 = prompt("digiti 2º mumero");
+        var n3 = prompt("digiti 3º mumero");
+        var n4 = prompt("digiti 4º mumero");
+        var n5 = prompt("digiti 5º mumero");
+        var n6 = prompt("digiti 6º mumero");
+        var menor
 
-        var maior = n1;2
-        if (n2 >= maior) {
-            maior = n2;
+        if (n1 <= n2 && n1 <= n3 && n1 <= n4 && n1 <= n5 && n1 <= n6) {
+            menor = n1;
         } else {
-            if (n3 >= maior) {
-                maior = n3;
+            if (n2 <= n3 && n2 <= n4 && n2 <= n5 && n2 <= n6) {
+                menor = n2;
             } else {
-                if (n4 >= maior) {
-                    maior = n4;
+                if (n3 <= n4 && n3 <= n5 && n3 <= n6) {
+                    menor = n3;
                 } else {
-                    if (n5 >= maior) {
-                        maior = n5;
+                    if (n4 <= n5 && n4 <= n6) {
+                        menor = n4;
                     } else {
-                        if (n6 >= maior) {
-                            maior = n6;
+                        if (n5 <= n6) {
+                            menor = n5;
+                        } else {
+                            menor = n6;
                         }
                     }
                 }
             }
         }
 
-        document.write("o maior" + maior)
+        document.write("<h1>O menor numero digitado foi " + menor + ".</h1>")
+
 
 
     </script>
