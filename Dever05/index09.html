@@ -15,53 +15,24 @@
         /*Faça um script para ler o dia, o mês e o ano de seu nascimento. Depois leia o dia, o mês e o ano atual.
         Calcule a idade da pessoa. Use comandos if , if/else ou if/else encadeado.*/
 
-        var diahoje, meshoje, anohoje, dia, mes, ano, idade
+        var anoAtual, anoNacimento, mesAtual, mesNascimento, diaAtual, diaNacimento, idade;
+        
+        anoNacimento = prompt("Digiti o ano em que voce naceu:");
+        mesNascimento = prompt("Digiti o mes em que voce naceu:");
+        diaNacimento = prompt("Digiti o dia em que voce naceu:");
 
-        diahoje = 02
-        meshoje = 03
-        anohoje = 2022
+        anoAtual = 2022
+        mesAtual = 03
+        diaAtual = 09
 
-        dia = prompt("Qual o dia do seu nascimento? - formato - 01, 02 , 03 ...");
-        mes = prompt("Qual o mês do seu nascimento? - formato - 01 , 02 , 03...");
-        ano = prompt("Qual o ano do seu nascimento? - formato - 1984 , 2000 , 2001 ...");
+        if(){
+                                    
+        }else{
+            if(){
 
-        if (meshoje > 12 || diahoje > 31 || ano > 2022) {
-            idade = "Você digitou errado."
-        }
-        else if (anohoje < ano || anohoje > ano) {
-            if (anohoje < ano) {
-                idade = "Você digitou errado."
-                
-            } else if (anohoje > ano) {
-                if (meshoje > mes) {
-                    idade = anohoje - ano
-                } else if (meshoje < mes) {
-                    idade = anohoje - ano - 1
-                } else if (meshoje == mes) {
-                    if (diahoje >= dia) {
-                        idade = anohoje - ano
-                    } else if (diahoje < dia)
-                        idade = anohoje - ano - 1
-                }
             }
-        } else if (anohoje = ano) {
-            if (meshoje > mes) {
-                idade = "Voce têm " + (meshoje - mes) + " MESES de vida."
-            } else if (meshoje < mes) {
-                
-                idade = "erro"
-            } else if (meshoje == mes) {
-                if (diahoje >= dia) {
-                    idade = "Voce têm " + (diahoje - dia) + " DIAS de vida."
-                } else if (diahoje < dia)
-                    idade = "erro"
-            }
-
         }
-
-
-        document.write(idade)
-
+       
 
     </script>
 </body>
