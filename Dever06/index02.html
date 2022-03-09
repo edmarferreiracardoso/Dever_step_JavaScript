@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title>Dever 6 ex 01</title>
+    <title>Dever 6 ex 02</title>
 </head>
+
 <body>
     <script>
+        //Faça um Script para verificar se um caracter digitado é vogal (maiúscula ou minúscula).
 
+        var vogal = prompt("Favor digite uma letra");
+
+        switch (vogal) {
+            case 'a':
+            case 'e':
+            case 'i':
+            case 'o':
+            case 'u':
+                document.write("<p>Você digitou uma vogal minúscula (" + vogal + ").</p>");
+                break;
+            case 'A':
+            case 'E':
+            case 'I':
+            case 'O':
+            case 'U':
+                document.write("<p>Você digitou uma vogal maiúscula  (" + vogal + ").</p>");
+                break;
+            default:
+                document.write("<p>Você digitou uma letra ou um caracter que não seja uma vogal (" + vogal + ").</p>")
+        }
     </script>
 </body>
+
 </html>
