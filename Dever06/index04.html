@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,29 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Dever 6 ex 04</title>
 </head>
+
 <body>
     <script>
         //Faça um Script para verificar se um caracter digitado é um número ou pontuação.
 
-        
-        
+        var caracter = prompt("Por favor digite um caracter:");
+
+        switch (caracter) {
+            case '1': case '2': case '3': case '4': case '5': case '6': case '7': case '8': case '9': case '10':
+            case '100': case '200': case '300': case '400': case '500': case '600':
+            case '700': case '800': case '900': case '1000':
+                document.write("O caracter digitado é um número.");
+                break;
+            case '!': case '@': case '^': case '~': case '?': case '.': case ':': case '´': case '`':
+                document.write("O caracter digitado é um pontuação.");
+                break;
+
+            default:
+                document.write("O caracter digitado não costa na lista.");
+
+        }
+
     </script>
 </body>
+
 </html>
