@@ -10,21 +10,104 @@
 </head>
 <body>
     <script>
-    var anoAtual = 2022;
-    var diaAtual = 15;
-    var mesAtual = 3;     
-    var anoNacimento = prompt("Digite o ano de seu nacimente","ex: 1982");
-    var mesNacimento = prompt("Digite o mes do seu nacimento","ex: 3 (Março)");
-    var diaNacimento = prompt("Digite o dia em que naceu","ex: 25");
-    var diasDeVida 
+/*1.	Faça um script onde o usuário digite o dia, mês e ano de nascimento e o dia, mês e ano. Calcule a quantidade de dias de dia desta pessoa.
+2.	Desconsidere os anos bissextos. Um ano tem 365 dias.
+3.	Este desafio pode ser feito usando o comando if simples, if/else, if/else aninhado e ou switch.
+4.	Exiba a quantidade de dias de nascimento.
+5.	Copie e cole o script do HTML
 
-    switch (anoNacimento) {
-        case "1":
-            document.write("Eu naci em " + (anoAtual) - (anoNacimento));
-            break;
-            default:
-                document.write("não deu certo")
+
+Teste as datas:
+
+Data Nascimento	data Atual
+
+1JAN2000		31DEZ2006
+10JAN2001		10JAN2008
+15OUT2000		25MAR2016
+30DEZ2005		12FEV2011
+*/
+    var anoAtual = 2022;
+    var diaAtual = 16;
+    var mesAtual = "3";     
+    var anoNacimento = prompt("Digite o ano de seu nascimente","ex: 1982");
+    var mesNacimento = prompt("Digite o mes do seu nascimento","ex: 3 (Março)");
+    var diaNacimento = prompt("Digite o dia em que nasceu","ex: 25");
+    var diasDeVida
+    var diasHoje
+    var diferenca
+    
+    document.write("Vecê digitou como data de" + diaNacimento + "/" + mesNacimento + "/" + anoNacimento + ".");
+    document.write("Vecê digitou como data de" + diaAtual + "/" + mesAtual + "/" + anoAtual + ".");
+
+    switch (mesNacimento) {
+        case "1": case "01": mesNacimento = 0;
+        break
+        case "2": case "02": mesNacimento = 31;
+        break
+        case "3": case "03": mesNacimento = 59;
+        break
+        case "4": case "04": mesNacimento = 90;
+        break
+        case "5": case "05": mesNacimento = 120;  
+        break 
+        case "6": case "06": mesNacimento = 151;
+        break
+        case "7":case "07":  mesNacimento = 181;
+        break
+        case "8": case "08": mesNacimento = 212;
+        break
+        case "9": case "09": mesNacimento = 243;
+        break
+        case "10": mesNacimento = 273;
+        break
+        case "11": mesNacimento = 304;
+        break
+        case "12": mesNacimento = 334;
+        break
+        default: mesNacimento = "Erro"
+        document.write("Você digitou Errado")    
+        
+        
     }
+        switch (mesAtual) {
+        case "1": case "01": mesAtual = 0;
+        break
+        case "2": case "02": mesAtual = 31;
+        break
+        case "3": case "03": mesAtual = 59;
+        break
+        case "4": case "04": mesAtual = 90;
+        break
+        case "5": case "05": mesAtual = 120;
+        break 
+        case "6": case "06": mesAtual = 151;
+        break
+        case "7":case "07":  mesAtual = 181;
+        break
+        case "8": case "08": mesAtual = 212;
+        break
+        case "9": case "09": mesAtual = 243;
+        break
+        case "10": mesAtual = 273;
+        break
+        case "11": mesAtual = 304;
+        break
+        case "12": mesAtual = 334;
+        break
+        default: mesAtual = "Erro"
+        document.write("Você digitou Errado")
+
+        
+                 
+    }
+    anoNacimento = anoNacimento * 365;
+    diasDeVida = Number(anoNacimento) + Number(mesNacimento) + Number(diaNacimento);
+    anoAtual = anoAtual * 365;
+    diasHoje = anoAtual + mesAtual + diaAtual;
+    diferenca = diasHoje - diasDeVida;
+    document.write("O numero de dias entre as duas data é:" + diferenca + "<br>")
+    
+
 
     </script>
 </body>
