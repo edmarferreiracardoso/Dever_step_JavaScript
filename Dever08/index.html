@@ -28,7 +28,7 @@ Data Nascimento	data Atual
 */
     var anoAtual = 2022;
     var diaAtual = 16;
-    var mesAtual = "3";     
+    var mesAtual = 3;     
     var anoNacimento = prompt("Digite o ano de seu nascimente","ex: 1982");
     var mesNacimento = prompt("Digite o mes do seu nascimento","ex: 3 (Março)");
     var diaNacimento = prompt("Digite o dia em que nasceu","ex: 25");
@@ -36,8 +36,8 @@ Data Nascimento	data Atual
     var diasHoje
     var diferenca
     
-    document.write("Vecê digitou como data de" + diaNacimento + "/" + mesNacimento + "/" + anoNacimento + ".");
-    document.write("Vecê digitou como data de" + diaAtual + "/" + mesAtual + "/" + anoAtual + ".");
+    document.write("Vecê digitou como data de nascimento " + diaNacimento + "/" + mesNacimento + "/" + anoNacimento + ".");
+    document.write("Vecê digitou como data de atual " + diaAtual + "/" + mesAtual + "/" + anoAtual + ".");
 
     switch (mesNacimento) {
         case "1": case "01": mesNacimento = 0;
@@ -64,8 +64,8 @@ Data Nascimento	data Atual
         break
         case "12": mesNacimento = 334;
         break
-        default: mesNacimento = "Erro"
-        document.write("Você digitou Errado")    
+        default: 
+        document.write("Você digitou Errado"); 
         
         
     }
@@ -94,21 +94,17 @@ Data Nascimento	data Atual
         break
         case "12": mesAtual = 334;
         break
-        default: mesAtual = "Erro"
-        document.write("Você digitou Errado")
-
-        
-                 
+        default: 
+        document.write("Você digitou Errado");
+    
     }
     anoNacimento = anoNacimento * 365;
-    diasDeVida = Number(anoNacimento) + Number(mesNacimento) + Number(diaNacimento);
+    diasDeVida = parseInt(anoNacimento) + parseInt(mesNacimento) + parseInt(diaNacimento);
     anoAtual = anoAtual * 365;
     diasHoje = anoAtual + mesAtual + diaAtual;
     diferenca = diasHoje - diasDeVida;
-    document.write("O numero de dias entre as duas data é:" + diferenca + "<br>")
+    document.write("O numero de dias entre as duas data é:" + diferenca + "<br>");
     
-
-
     </script>
 </body>
 </html>
