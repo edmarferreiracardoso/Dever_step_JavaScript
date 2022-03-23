@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,25 @@
     <link rel="stylesheet" href="css/style.css">
     <title>ex 06</title>
 </head>
+
 <body>
     <script>
         /*Faça um script em JavaScript, onde o usuário digite um número inteiro.
          O script deverá imprimir todos os números pares positivos.*/
-         
-         var inteiro =  parseInt(prompt("Digite um Número "," ex: 80 "));
-         
-         while(inteiro%2 == 0){
-             document.write("<p>O número (" + inteiro + ") é um numero par.</p>")
-             inteiro=inteiro+1
-         }
-        
 
-        
-       
-    </script>    
+        var inteiro = parseInt(prompt("Digite um Número ", " ex: 80 "));
+
+        var pares = 1;
+        while (pares <= inteiro) {
+            if (pares % 2 == 0) {
+                document.write("<p>Número (" + pares + ") é par positivo.</p>");
+            }
+            pares++;
+        }
+        document.write("<p>Fim do loop</p>")
+
+
+    </script>
 </body>
+
 </html>

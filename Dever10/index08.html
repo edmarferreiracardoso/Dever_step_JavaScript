@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Desafio 2</title>
+</head>
+
+<body>
+    <script>
+        /*Faça um Script em javascript para verificar se um 
+        número digitado pelo usuário é um número primo. */
+
+        var primo = [];
+        primo.push(parseInt(prompt("Digite um número", " ex: 10 ")));
+        var cont = 0;
+        var auxiliar = 0;
+
+        while (auxiliar <= primo) {
+            if (primo % auxiliar == 0) {
+                cont++;
+            }
+            auxiliar++;
+        }
+        if (cont == 2) {
+            document.write("<p>O número " + primo + " é primo.</p>")
+        } else {
+            document.write("<p>O número " + primo + " não é primo.</p>")
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>
