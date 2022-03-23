@@ -12,21 +12,43 @@
 
 <body>
     <script>
-/*
-2.	Faça um script para armazenar 5 nomes e uma array e faça as seguintes tarefas:
-a.	Exiba o tamanho do vetor;
-b.	Exiba todos os elementos do vetor;
-c.	Remova o ultimo nome do vetor;
-d.	Remova o primeiro elemento do vetor
-e.	Exiba todos os elementos do vetor;
-f.	Adicione o nEome “ana maria” no primeiro elemento do vetor
-g.	xiba o tamanho do vetor;
-h.	Exiba todos os elementos do vetor separados pelo caracter “#”
+        /*
+        2.	Faça um script para armazenar 5 nomes e uma array e faça as seguintes tarefas:
+        a.	Exiba o tamanho do vetor;
+        b.	Exiba todos os elementos do vetor;
+        c.	Remova o ultimo nome do vetor;
+        d.	Remova o primeiro elemento do vetor
+        e.	Exiba todos os elementos do vetor;
+        f.	Adicione o nEome “ana maria” no primeiro elemento do vetor
+        g.	xiba o tamanho do vetor;
+        h.	Exiba todos os elementos do vetor separados pelo caracter “#”
+        
+         Use as funções deArray.
+        */
 
- Use as funções deArray.
-*/
+        var nomes = [];
 
-      
+        var nomes = []
+        nomes.push("edmar");
+        nomes.push("marcelo");
+        nomes.push("luciano");
+        nomes.push("thiago");
+        nomes.push("katia");
+
+        document.write("<p>Estes são os nomes do meus vetores: " + nomes + " a quantidade total de vetores são: " + nomes.length + ".</p>")
+        
+        nomes.pop();
+        nomes.shift();
+
+        document.write(nomes);
+        nomes.unshift("ana maria");
+
+        document.write("<p>Este agora é o tamanho do meu vetor : " + nomes.length + ".</p>");
+        document.write("<p>Os nomes vão ser separedos por um caracter : " + nomes.join("#") + " .</p> ")
+
+
+
+
 
 
     </script>
