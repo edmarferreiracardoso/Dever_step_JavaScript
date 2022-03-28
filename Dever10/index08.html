@@ -18,7 +18,7 @@
         var primo = [];
         primo.push(parseInt(prompt("Digite um número", " ex: 10 ")));
         var cont = 0;
-        var auxiliar = 0;
+        var auxiliar = 1;
 
         while (auxiliar <= primo) {
             if (primo % auxiliar == 0) {
@@ -27,9 +27,9 @@
             auxiliar++;
         }
         if (cont == 2) {
-            document.write("<p>O número " + primo + " é primo.</p>")
+            document.write("<p>O número " + primo + " é primo.</p>");
         } else {
-            document.write("<p>O número " + primo + " não é primo.</p>")
+            document.write("<p>O número " + primo + " não é primo.</p>");
         }
 
 

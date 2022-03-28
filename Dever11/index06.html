@@ -7,26 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title>ex 06</title>
+    <title>ex 0</title>
 </head>
 
 <body>
+
+    <section>
+        <p>6. Faça um script em JavaScript, onde o usuário digite um número inteiro. O script deverá imprimir todos os
+            números pares positivos.</p>
+    </section>
+
+
     <script>
         /*Faça um script em JavaScript, onde o usuário digite um número inteiro.
          O script deverá imprimir todos os números pares positivos.*/
 
-        var inteiro = parseInt(prompt("Digite um Número ", " ex: 80 "));
-        var pares = 1;
-        while (pares <= inteiro) {
-            if (pares % 2 == 0) {
-                document.write("<p>Número (" + pares + ") é par positivo.</p>");
+        var numero = parseInt(prompt("Digite um número: "));
+        var numero2 = 0;
+        for (numero; numero2 <= numero; numero2++) {
+
+            if (numero2 % 2 == 0) {
+
+                document.write(numero2 + "<br>");
             }
-            pares++;
+
         }
-        document.write("<p>Fim do loop</p>")
 
 
     </script>
+
 </body>
 
 </html>
