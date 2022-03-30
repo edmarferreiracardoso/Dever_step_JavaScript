@@ -7,23 +7,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title>ex 01</title>
+    <title>ex 0</title>
 </head>
 
 <body>
 
     <section>
-        <p>1. Faça um script para imprimir de 1 a 30, crescente.</p>
+        <p>7. Faça um script em JavaScript para calcular o fatorial de um número inteiro positivo.
+            5! = 5*4*3*2*1
+        </p>
     </section>
 
 
     <script>
-        //1.  Faça um script para imprimir de 1 a 30, crescente.
+        /*Faça um script em JavaScript para calcular o fatorial de um número inteiro positivo.
+            5! = 5*4*3*2*1*/
 
-        for (var numero = 1; numero<=30; numero++) {
-            
-            document.write(numero + "<br>")
-            
+        var fatorial = parseInt(prompt("Digite um número."));
+        var resultado = fatorial;
+        var i = 1;
+
+        for (fatorial; i < fatorial; i++) {
+
+            resultado = resultado * i;
+
+            document.write(resultado + "<br>");
+
         }
 
 

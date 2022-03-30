@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<section>
+    <ol>
+        <li>Faça um script para criar um vetor de X elementos:</li>
+    </ol>
+    <ul>
+        <li>Armazene valores no vetor (com interação com usuário)</li>
+        <li>Exiba todos os valores armazenado</li>
+        <li>Exiba o maior valor digitado</li>
+        <li>Exiba o menor valor digitado</li>
+        <li>Exiba a soma de todos os elementos do vetor</li>
+        <li>Faça o script usando o comando FOR()</li>
+    </ul>
+</section>
+
+<script>
+    var numeros = [];
+    var aux;
+
+    for(var i=0; i<=9; i++){
+        aux = parseInt(prompt("Digite um número"," ex: 1 a 10"));
+        numeros.push(aux);
+    }
+
+    for(var i =0; i< numeros.length; i++);{
+        document.write("<p>A quantidade de numeros digitado foi: " + i + "  números.</p>");
+    }
+
+    for(var i=0; i<numeros.length; i++){
+        document.write("<p>Um dos números digitados foi este (" + numeros[i] + ").</p>");
+    }
+
+    for(var i = 0; numeros >= i; numeros ++){
+        document.write("O maior valor digitado foi : " + numeros);
+    }
+</script>
+</body>
+</html>

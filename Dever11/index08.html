@@ -7,23 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-    <title>ex 01</title>
+    <title>ex 0</title>
 </head>
 
 <body>
 
     <section>
-        <p>1. Faça um script para imprimir de 1 a 30, crescente.</p>
+        <p>8. Faça um Script em javascript para verificar se um número
+            digitado pelo usuário é um número primo.
+        </p>
     </section>
 
 
     <script>
-        //1.  Faça um script para imprimir de 1 a 30, crescente.
+        /*Faça um Script em javascript para verificar se um número
+            digitado pelo usuário é um número primo.*/
 
-        for (var numero = 1; numero<=30; numero++) {
-            
-            document.write(numero + "<br>")
-            
+        var n = parseInt(prompt("Digite um número", ""));
+        var cont = 0;
+        var i = 0;
+
+        for (n; i <= n; i++) {
+
+            if (n % i == 0) {
+
+                cont++;
+            }
+
+        }
+
+        if (cont == 2) {
+            document.write("O número " + n + " é primo.");
+        } else {
+            document.write("O número " + n + " não é primo.");
         }
 
 
