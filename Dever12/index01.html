@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,41 +9,65 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-<section>
-    <ol>
-        <li>Faça um script para criar um vetor de X elementos:</li>
-    </ol>
-    <ul>
-        <li>Armazene valores no vetor (com interação com usuário)</li>
-        <li>Exiba todos os valores armazenado</li>
-        <li>Exiba o maior valor digitado</li>
-        <li>Exiba o menor valor digitado</li>
-        <li>Exiba a soma de todos os elementos do vetor</li>
-        <li>Faça o script usando o comando FOR()</li>
-    </ul>
-</section>
+    <section>
+        <ol>
+            <li>Faça um script para criar um vetor de X elementos:</li>
+        </ol>
+        <ul>
+            <li>Armazene valores no vetor (com interação com usuário)</li>
+            <li>Exiba todos os valores armazenado</li>
+            <li>Exiba o maior valor digitado</li>
+            <li>Exiba o menor valor digitado</li>
+            <li>Exiba a soma de todos os elementos do vetor</li>
+            <li>Faça o script usando o comando FOR()</li>
+        </ul>
+    </section>
 
-<script>
-    var numeros = [];
-    var aux;
+    <script>
+        var n = [];
 
-    for(var i=0; i<=9; i++){
-        aux = parseInt(prompt("Digite um número"," ex: 1 a 10"));
-        numeros.push(aux);
-    }
 
-    for(var i =0; i< numeros.length; i++);{
-        document.write("<p>A quantidade de numeros digitado foi: " + i + "  números.</p>");
-    }
+        for (var i = 0; i <= 4; i++) {
+            var aux = parseInt(prompt("Digite um número", " ex: 1 a 5"));
+            n.push(aux);
+        }
 
-    for(var i=0; i<numeros.length; i++){
-        document.write("<p>Um dos números digitados foi este (" + numeros[i] + ").</p>");
-    }
+        for (var i = 0; i < n.length; i++) {
+            document.write("<p> Este foi um dos numeros digitado por vôce : " + n[i] + "  números.</p>");
+        }
 
-    for(var i = 0; numeros >= i; numeros ++){
-        document.write("O maior valor digitado foi : " + numeros);
-    }
-</script>
+
+        var maior = n[0];
+        for (var i = 0; i < n.length; i++) {
+            if(n[i] > maior) {
+                maior = n[i];
+            }
+           
+        }
+        document.write("<p>O maior número digitado foi: (" + maior + ").</p>" );
+
+        var menor = n[0];
+        for(var i = 0; i < n.length; i++){
+            if(n[i] < menor){
+                menor = n[i];
+            }
+        }
+        document.write("<p>O menor número digitado foi: (" + menor + ").</p>" );
+
+        var total
+        for(){
+            if(){
+                ; 
+            }
+        }
+        document.write("a soma dos vetores são: (" + total + ")");
+
+
+
+
+    </script>
 </body>
+
 </html>
