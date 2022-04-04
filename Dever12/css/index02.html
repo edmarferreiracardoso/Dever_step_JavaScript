@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ex 02</title>
+</head>
+
+<body>
+    <section>
+        <p>Faça o mesmo código usando o comando while().</p>
+    </section>
+
+    <script>
+        var v3 = [];
+        var j = 1;
+        while (j < 5) {
+            var aux3 = parseInt(prompt("Digite o " + j + "° número."));
+            j++;
+        }
+
+        var j = 0
+        while (j < v3.length) {
+            document.write("<p>O índice " + j + " é: " + v3[j] + ".</p>");
+            j++;
+
+        }
+
+        var maior = v3[0];
+        while (j < v3.length) {
+            if (v3[j] > maior) {
+                maior = v3[j];
+
+            }
+            j++;
+        }
+        document.write("<p>O maior valor é " + maior + " .</p>");
+
+        var menor = v3[0];
+        while (j < v3.length) {
+            if (v3[j] < menor) {
+                menor = v3[j];
+
+            }
+            j++;
+        }
+        document.write("<p>O menor valor é " + menor + " .</p>");
+
+
+        var resultado = 0;
+        while (j < v3.length) {
+            resultado = resultado + v3[j];
+        }
+        document.write("<p>A soma dos elementos do vetor é: " + resultado + " .</p>");
+
+    </script>
+</body>
+
+</html>

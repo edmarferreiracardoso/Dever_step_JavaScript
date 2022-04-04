@@ -26,46 +26,41 @@
     </section>
 
     <script>
-        var n = [];
+        
+        var v1 = [];
+
+        for (var i = 1; i < 5; i++) {
+            var aux = parseInt(prompt("Digite o " + i + "° número."));
+            v1.push(aux);
 
 
-        for (var i = 0; i <= 4; i++) {
-            var aux = parseInt(prompt("Digite um número", " ex: 1 a 5"));
-            n.push(aux);
         }
 
-        for (var i = 0; i < n.length; i++) {
-            document.write("<p> Este foi um dos numeros digitado por vôce : " + n[i] + "  números.</p>");
+        for (var i = 0; i < v1.length; i++) {
+            document.write("<p>O índice " + i + " é: " + v1[i] + ".</p>");
         }
 
-
-        var maior = n[0];
-        for (var i = 0; i < n.length; i++) {
-            if(n[i] > maior) {
-                maior = n[i];
-            }
-           
-        }
-        document.write("<p>O maior número digitado foi: (" + maior + ").</p>" );
-
-        var menor = n[0];
-        for(var i = 0; i < n.length; i++){
-            if(n[i] < menor){
-                menor = n[i];
+        var maior = v1[0];
+        for (var i = 0; i < v1.length; i++) {
+            if (v1[i] > maior) {
+                maior = v1[i];
             }
         }
-        document.write("<p>O menor número digitado foi: (" + menor + ").</p>" );
+        document.write("<p>O maior valor é " + maior + " .</p>");
 
-        var total
-        for(){
-            if(){
-                ; 
+        var menor = v1[0];
+        for (var i = 0; i < v1.length; i++) {
+            if (v1[i] < menor) {
+                menor = v1[i];
             }
         }
-        document.write("a soma dos vetores são: (" + total + ")");
+        document.write("<p>O menor valor é " + menor + " .</p>");
 
-
-
+        var resultado = 0
+        for (var i = 0; i < v1.length; i++) {
+            resultado = resultado + v1[i];
+        }
+        document.write("<p>A soma dos elementos do vetor é: " + resultado + " .</p>");
 
     </script>
 </body>
