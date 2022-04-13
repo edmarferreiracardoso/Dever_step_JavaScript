@@ -7,33 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contra Cheque</title>
     <style>
-       p{
-            border: 1px solid black;
-        }
-        #teste {
-            width: 500px;
-        }
 
-        *{
-            margin: 0px;
-        }
-        
     </style>
 </head>
 
 <body>
     <section>
-        <fieldset>
-            <legend>Contra Cheque</legend>
-            <form>
-            <p>Draxx Segurança Eletronica</p>
-            </form>
-            <form>
-                <spam>
+        <div class="cformulario">
+            <fieldset>
+                <legend>Contra Cheque</legend>
+                <div>
+                    <p>Draxx Segurança Eletronica</p>
+                </div>
+                <div>
                     <p>Comprovante de rendimento</p>
-                </spam>
-                <spam>
-                    Mes de referencia :
+                </div>
+                <div>
+                    <p>Mes de referencia :
                         <select name="" id="">
                             <option value="">Janeiro</option>
                             <option value="">Fevereiro</option>
@@ -48,46 +38,42 @@
                             <option value="">Novenbro</option>
                             <option value="">Dezembro</option>
                         </select>
-                </spam>
-            </form>
-            <form>
-                <p> Sexo :
-                    <input type="radio" name="sexo" id="imasculino" value="">
-                    <label for="imasculino">Masculino</label>
-                    <input type="radio" name="sexo" id="ifeminino" value="">
-                    <label for="ifeminino">Feminino</label>
-                </p>
-            </form>
-            
-        </fieldset>
-        
+                    </p>
+                </div>
+                <div>
+                    <p>Nome : <input type="text" name="nome" id="nome" size=" 50" required
+                            placeholder="EX: Edmar Ferreira"></p>
+                </div>
+                <div>
+                    <p>Cargo : <input type="text" name="cargo" id="cargo" size=" 50" required></p>
+                </div>
+                <div>
+                    <p>Nome do Pai : <input type="text" name="pai" id="nomedopai" size="50"></p>
+                </div>
+                <div>
+                    <p>Nome da Mae : <input type="text" name="mae" id="nomedamae" size="50"></p>
+                </div>
+                <div>
+                    <p>Data de Nascimento: <input type="date" required></p>
+                </div>
+                <div>
+                    <p>Idade: <input type="text" required value="" size="15"></p>
+                </div>
+                <div>
+                    <p>CPF: <input type="text" size="15" required placeholder="ex: 062.115.846.67"></p>
+                </div>
+                <div>
+                    <p> Sexo :
+                        <input type="radio" name="sexo" id="imasculino" value="">
+                        <label for="imasculino">Masculino</label>
+                        <input type="radio" name="sexo" id="ifeminino" value="">
+                        <label for="ifeminino">Feminino</label>
+                    </p>
+                </div>
+        </div>
     </section>
-<table"
-} >
-    <tr>
-        <td id="teste">Draxx segurança Eletronica</td>
-    </tr>
-    <tr>
-        <td>Comprovante de rendimento</td>
-        <td>Mes de referencia :
-            <select name="" id="">
-                <option value="">Janeiro</option>
-                <option value="">Fevereiro</option>
-                <option value="">Março</option>
-                <option value="">Abril</option>
-                <option value="">Maio</option>
-                <option value="">Junho</option>
-                <option value="">Julho</option>
-                <option value="">Agosto</option>
-                <option value="">Setembro</option>
-                <option value="">Outubro</option>
-                <option value="">Novenbro</option>
-                <option value="">Dezembro</option>
-            </select></td>
-        
-    </tr>
-</table>
-  
+
 </body>
 
 </html>
+
