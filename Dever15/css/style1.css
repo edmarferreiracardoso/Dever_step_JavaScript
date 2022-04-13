@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.cformulario {
+    width: 680px;
+    height: 355px;
+    background-color: rgb(190, 190, 190);
+    margin: 40px auto auto auto;
+    border-radius: 5px;
+
+}
+
+div {
+    margin-top: 10px;
+}
+
+#impresa {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.mesdeferencia {
+    display: inline;
+
+}
+
+#mes {
+    margin-left: 85px;
+
+}
+
+#nome {
+    margin-left: 50px;
+}
+
+#cargo {
+    margin-left: 50px;
+}
+
+#nomedopai {
+    margin-left: 7px;
+}
+
+#contracheque {
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+
+#idivcontracheque {
+    width: 50px;
+    height: 30px;
+    margin-left: 280px;
+}
