@@ -14,76 +14,20 @@
 
     <div id="idivcalc">
         <div>
-            <input type="text" value="" size="14" class="cvisor">
+            <input type="text" value="" size="14" class="cvisor" id="ivisor">
         </div>
         <div>
             <span>
-                <button onclick="" class="cbotoes">%</button>
+                <button onclick="preencher('/')" class="cbotoes">%</button>
             </span>
             <span>
                 <button onclick="" class="cbotoes">CE</button>
             </span>
             <span>
-                <button onclick="" class="cbotoes">C</button>
+                <button onclick="preencher('')" class="cbotoes">C</button>
             </span>
             <span>
-                <button onclick="" class="cbotoes">&lt;</button>
-            </span>
-        </div>
-        <div>
-            <span>
-                <button onclick="" class="cbotoes">--</button>
-            </span>
-            <span>
-                <button onclick="" class="cbotoes">--</button>
-            </span>
-            <span>
-                <button onclick="" class="cbotoes">--</button>
-            </span>
-            <span>
-                <button onclick="" class="cbotoes">&divide;</button>
-            </span>
-        </div>
-        <div>
-            <span>
-                <button onclick="" class="cbotoes">7</button>
-            </span>
-            <span>
-                <button onclick="" class="cbotoes">8</button>
-            </span>
-            <span>
-                <button onclick="" class="cbotoes">9</button>
-            </span>
-            <span>
-                <button onclick="" class="cbotoes">x</button>
-            </span>
-        </div>
-        <div>
-            <span>
-                <button onclick="" class="cbotoes">4</button>
-            </span>
-            <span>
-                <button onclick="" class="cbotoes">5</button>
-            </span>
-            <span>
-                <button onclick="" class="cbotoes">6</button>
-            </span>
-            <span>
-                <button onclick="" class="cbotoes">-</button>
-            </span>
-        </div>
-        <div>
-            <span>
-                <button onclick="" class="cbotoes">1</button>
-            </span>
-            <span>
-                <button onclick="" class="cbotoes">2</button>
-            </span>
-            <span>
-                <button onclick="" class="cbotoes">3</button>
-            </span>
-            <span>
-                <button onclick="" class="cbotoes">+</button>
+                <button onclick="preencher('')" class="cbotoes">&lt;&lt;</button>
             </span>
         </div>
         <div>
@@ -91,19 +35,97 @@
                 <button onclick="" class="cbotoes">--</button>
             </span>
             <span>
-                <button onclick="" class="cbotoes">0</button>
+                <button onclick="" class="cbotoes">--</button>
             </span>
             <span>
-                <button onclick="" class="cbotoes">,</button>
+                <button onclick="" class="cbotoes">--</button>
             </span>
             <span>
-                <button onclick="" class="cbotoes">=</button>
+                <button onclick="operador('/')" class="cbotoes">&divide;</button>
+            </span>
+        </div>
+        <div>
+            <span>
+                <button onclick="preencher('7')" class="cbotoes">7</button>
+            </span>
+            <span>
+                <button onclick="preencher('8')" class="cbotoes">8</button>
+            </span>
+            <span>
+                <button onclick="preencher('9')" class="cbotoes">9</button>
+            </span>
+            <span>
+                <button onclick="operador('*')" class="cbotoes">x</button>
+            </span>
+        </div>
+        <div>
+            <span>
+                <button onclick="preencher('4')" class="cbotoes">4</button>
+            </span>
+            <span>
+                <button onclick="preencher('5')" class="cbotoes">5</button>
+            </span>
+            <span>
+                <button onclick="preencher('6')" class="cbotoes">6</button>
+            </span>
+            <span>
+                <button onclick="operador('-')" class="cbotoes">-</button>
+            </span>
+        </div>
+        <div>
+            <span>
+                <button onclick="preencher('1')" class="cbotoes">1</button>
+            </span>
+            <span>
+                <button onclick="preencher('2')" class="cbotoes">2</button>
+            </span>
+            <span>
+                <button onclick="preencher('3')" class="cbotoes">3</button>
+            </span>
+            <span>
+                <button onclick="operador('+')" class="cbotoes">+</button>
+            </span>
+        </div>
+        <div>
+            <span>
+                <button onclick="preencher('.')" class="cbotoes">.</button>
+            </span>
+            <span>
+                <button onclick="preencher('0')" class="cbotoes">0</button>
+            </span>
+            <span>
+                <button onclick="preencher(',')" class="cbotoes">,</button>
+            </span>
+            <span>
+                <button onclick="resultado()" class="cbotoes">=</button>
             </span>
 
         </div>
 
     </div>
 
+    <script>
+        /* function preencherUm() {
+             let aux = document.getElementById("ivisor").value;   
+             aux = aux + "1";
+             document.getElementById("ivisor").value = aux
+                      
+         }
+         function preencherDois() {
+             let aux = document.getElementById("ivisor").value;   
+             aux = aux + "2";
+             document.getElementById("ivisor").value = aux
+                      
+         }
+         function preencherTres() {
+             document.getElementById("ivisor").value += "3";
+         }
+ */
+        function preencher(n) { //função generica
+            document.getElementById("ivisor").value += n;
+        }
+
+    </script>
 </body>
 
 </html>
