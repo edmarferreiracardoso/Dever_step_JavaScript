@@ -25,7 +25,7 @@
                     <button onclick="" class="cbotoes">ON</button>
                 </span>
                 <span>
-                    <button onclick="" class="cbotoes" id="imcr">MRC</button>
+                    <button onclick="zerar()" class="cbotoes">CE</button>
                 </span>
                 <span>
                     <button onclick="" class="cbotoes">M-</button>
@@ -148,6 +148,13 @@
                     break;
             }
 
+
+        }
+
+        function zerar() {
+            primeiroN = "";
+            operacoes = "";
+            document.getElementById("ivisor").value = "";
         }
 
 
