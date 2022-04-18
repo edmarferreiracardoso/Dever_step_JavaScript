@@ -87,14 +87,14 @@
             <tr>               
                 <td>1</td>
                 <td>Salário Bruto</td>
-                <td><input type="text" value="" name="" size="9" class="cinputtabe"></td>
+                <td><input type="text" value="salariobruto" name="" id="valariob" size="9" class="cinputtabe" ></td>
                 <td></td>
                     
          </table>
          <table>
             <tr>               
                 <td>2</td>
-                <td></td>
+                <td>Pensão</td>
                 <td></td>
                 <td><input type="text" value="" name="" size="9" class="cinputtabe"></td>
                     
@@ -102,7 +102,7 @@
          <table>
             <tr>               
                 <td>3</td>
-                <td></td>
+                <td>FGTS</td>
                 <td></td>
                 <td><input type="text" value="" name="" size="9" class="cinputtabe"></td>
                     
@@ -111,8 +111,8 @@
             <tr>               
                 <td></td> 
                 <td></td>
-                <td>Total Receita</td>
-                <td>Total Despesa</td>
+                <td>Total Receita: <input type="text" value="" size="4"></td>
+                <td>Total Despesa: <input type="text" value="" size="4"></td>
                     
          </table>
          <table>
@@ -126,6 +126,12 @@
          <input type="button" name="" value="Gerar contracheque" id="gerarcontracheque">
  
     </div>
+
+    <script>
+        function salariobruto() {
+            document.getElementById("valariob").value;
+        }
+    </script>
 </body>
 
 </html>

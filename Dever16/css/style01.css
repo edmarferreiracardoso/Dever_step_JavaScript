@@ -13,7 +13,7 @@ p{
 }
 #idivcontra {
     width: 650px;
-    height: 350px;
+    height: 360px;
     border: 1px solid black;
     margin: auto;
     padding: 20px;
@@ -29,22 +29,22 @@ table {
 }
 th{
     border: 1px solid black;
-    width: 150px;
+    width: 160px;
     height: 4px;
 }
 td {
     border: 1px solid black;
-    width: 150px;
+    width: 160px;
     height: 4px;
 }
 
 .cnada{
     border: transparent;
-    width: 152px;
+    width: 161px;
 }
 
 #ivasarilo{
-    width: 302px;
+    width: 323px;
 }
 
 .cbordas{
@@ -55,9 +55,10 @@ input {
 }
 
 .cinputtabe{
-    margin: 1px 0px 5px 25px ;
+    margin: 1px 0px 5px 29px ;
+
 }
 
 #gerarcontracheque {
-    margin: 20px 0px 0px 250px;
+    margin: 20px 0px 20px 250px;
 }
