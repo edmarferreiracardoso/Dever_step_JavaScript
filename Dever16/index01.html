@@ -87,16 +87,16 @@
             <tr>               
                 <td>1</td>
                 <td>Salário Bruto</td>
-                <td><input type="text" value="salariobruto" name="" id="valariob" size="9" class="cinputtabe" ></td>
+                <td><input type="text" value="" name="" id="valorbruno" size="9" class="cinputtabe" ></td>
                 <td></td>
                     
          </table>
          <table>
             <tr>               
                 <td>2</td>
-                <td>Pensão</td>
+                <td>INSS</td>
                 <td></td>
-                <td><input type="text" value="" name="" size="9" class="cinputtabe"></td>
+                <td><input type="text" value="" name="" size="9" class="cinputtabe" id="inss" ></td>
                     
          </table>
          <table>
@@ -104,33 +104,50 @@
                 <td>3</td>
                 <td>FGTS</td>
                 <td></td>
-                <td><input type="text" value="" name="" size="9" class="cinputtabe"></td>
+                <td><input type="text" value="" name="" size="9" class="cinputtabe" id="fgts"></td>
                     
          </table>
          <table>
             <tr>               
                 <td></td> 
                 <td></td>
-                <td>Total Receita: <input type="text" value="" size="4"></td>
-                <td>Total Despesa: <input type="text" value="" size="4"></td>
+                <td>Total Receita: <input type="text" value="" size="4" id="rec"></td>
+                <td>Total Despesa: <input type="text" value="" size="4" id="desp" ></td>
                     
          </table>
          <table>
             <tr>               
                 <td class="cnada"></td>
                 <td class="cnada"></td>
-                <td id="ivasarilo"><label for="">Valor Salário Líquido</label><input type="text" name="" id="" size="10" class="cinputtabe"></td>
+                <td id="ivasarilo"><label for="">Valor Salário Líquido</label><input type="text" name="" id="liq" size="10" class="cinputtabe"></td>
                     
          </table>
 
-         <input type="button" name="" value="Gerar contracheque" id="gerarcontracheque">
+         <input type="button" name="" onclick="salariobruto()" value="Gerar contracheque" id="gerarcontracheque">
  
     </div>
 
     <script>
+
+        let aux, inss, fgts, receita, despesa, liquido;
+
         function salariobruto() {
-            document.getElementById("valariob").value;
+            aux = Number(document.getElementById("valorbruno").value);
+            inss = aux * 0.12;
+            fgts = aux * 0.08;
+            receita = aux;
+            despesa = fgts + inss;
+            liquido = receita - despesa;
+            document.getElementById("inss").value = "R$ " + inss;
+            document.getElementById("fgts").value = "R$ " + fgts;
+            document.getElementById("rec").value = "R$ " + receita;
+            document.getElementById("desp").value = "R$ " + despesa;
+            document.getElementById("liq").value = "R$ " + liquido;
+
         }
+
+        
+        
     </script>
 </body>
 
