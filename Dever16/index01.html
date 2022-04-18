@@ -6,20 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style01.css">
     <title>contracheque</title>
 </head>
 
 <body>
     <h1>Contracheque</h1>
-    <div>
+    <div id="idivcontra">
         <div>
             <p>Nome da empresa</p>
         </div>
         <span>
             <p>Comprovante de rendimento</p>
         </span>
-        <span>
+        <span class="cbordas">
             <label for="">Mês referência: </label>
             <select name="" id="">
                 <option value="">Janeiro</option>
@@ -41,7 +41,7 @@
             <span>
 
                 <label for="">Nome : </label>
-                <input type="text" name="nome" id="" size="30" required placeholder="EX: Nome completo">
+                <input type="text" name="nome" id="" size="45" required placeholder="EX: Nome completo">
 
             </span>
             <span>
@@ -52,11 +52,11 @@
         <div>
             <span>
                 <label for="">Cargo: </label>
-                <input type="text" name="" id="" size="20">
+                <input type="text" name="" id="" size="15">
             </span>
             <span>
                 <label for="">CPF: </label>
-                <input type="text" name="" id="" size="20">
+                <input type="text" name="" id="" size="15">
             </span>
             <span>
                 <label for="">Sexo : </label>
@@ -68,12 +68,13 @@
         </div>
         <div>
             <label for="">Nome Pai: </label>
-            <input type="text" name="" id="" value="" size="30">
+            <input type="text" name="" id="" value="" size="45">
         </div>
         <div>
             <label for="">Nome Mãe: </label>
-            <input type="text" name="" id="" value="" size="30">
+            <input type="text" name="" id="" value="" size="45">
         </div>
+        <div></div>
         <table>
            <tr>               
                <th>Itens</th>
@@ -86,7 +87,7 @@
             <tr>               
                 <td>1</td>
                 <td>Salário Bruto</td>
-                <td><input type="text" value="" name="" size="9"></td>
+                <td><input type="text" value="" name="" size="9" class="cinputtabe"></td>
                 <td></td>
                     
          </table>
@@ -95,7 +96,7 @@
                 <td>2</td>
                 <td></td>
                 <td></td>
-                <td><input type="text" value="" name="" size="9"></td>
+                <td><input type="text" value="" name="" size="9" class="cinputtabe"></td>
                     
          </table>
          <table>
@@ -103,20 +104,12 @@
                 <td>3</td>
                 <td></td>
                 <td></td>
-                <td><input type="text" value="" name="" size="9"></td>
+                <td><input type="text" value="" name="" size="9" class="cinputtabe"></td>
                     
          </table>
          <table>
             <tr>               
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                    
-         </table>
-         <table>
-            <tr>               
-                <td></td>
+                <td></td> 
                 <td></td>
                 <td>Total Receita</td>
                 <td>Total Despesa</td>
@@ -124,12 +117,13 @@
          </table>
          <table>
             <tr>               
-                <td></td>
-                <td></td>
-                <td></td>
-                <td><label for="">Valor Salário Líquido</label><input type="text" name="" id="" size="5"></td>
+                <td class="cnada"></td>
+                <td class="cnada"></td>
+                <td id="ivasarilo"><label for="">Valor Salário Líquido</label><input type="text" name="" id="" size="10" class="cinputtabe"></td>
                     
          </table>
+
+         <input type="button" name="" value="Gerar contracheque" id="gerarcontracheque">
  
     </div>
 </body>

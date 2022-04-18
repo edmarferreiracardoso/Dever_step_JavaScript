@@ -1,1 +1,63 @@
 @charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+    
+}
+#idivcontra {
+    width: 650px;
+    height: 350px;
+    border: 1px solid black;
+    margin: auto;
+    padding: 20px;
+    background-color: bisque;
+}
+
+select{
+    margin-top: 5px;
+}
+table {
+    border-spacing: 0px;
+    margin: auto;
+}
+th{
+    border: 1px solid black;
+    width: 150px;
+    height: 4px;
+}
+td {
+    border: 1px solid black;
+    width: 150px;
+    height: 4px;
+}
+
+.cnada{
+    border: transparent;
+    width: 152px;
+}
+
+#ivasarilo{
+    width: 302px;
+}
+
+.cbordas{
+    margin-left: 450px;
+}
+input {
+    margin: 5px 0px 3px 0px;
+}
+
+.cinputtabe{
+    margin: 1px 0px 5px 25px ;
+}
+
+#gerarcontracheque {
+    margin: 20px 0px 0px 250px;
+}
