@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <aside>
+        <h1>Dever 15 HTML5/CSS/JS Calculadora</h1>
+    </aside>
+
+    <section>
+        <div id="idivcalc">
+            <div>
+                <input type="text" value="" size="14" class="cvisor" id="ivisor">
+            </div>
+            <div>
+                <span>
+                    <button onclick="" class="cbotoes">ON</button>
+                </span>
+                <span>
+                    <button onclick="zerar()" class="cbotoes">CE</button>
+                </span>
+                <span>
+                    <button onclick="" class="cbotoes">M-</button>
+                </span>
+                <span>
+                    <button onclick="" class="cbotoes">M+</button>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <button onclick="" class="cbotoes" id="ioff">OFF</button>
+                </span>
+                <span>
+                    <button onclick="" class="cbotoes">&radic;</button>
+                </span>
+                <span>
+                    <button onclick="sinais('%')" class="cbotoes">%</button>
+                </span>
+                <span>
+                    <button onclick="sinais('/')" class="cbotoes">&divide;</button>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <button onclick="calculadora('7')" class="cbotoes">7</button>
+                </span>
+                <span>
+                    <button onclick="calculadora('8')" class="cbotoes">8</button>
+                </span>
+                <span>
+                    <button onclick="calculadora('9')" class="cbotoes">9</button>
+                </span>
+                <span>
+                    <button onclick="sinais('*')" class="cbotoes">x</button>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <button onclick="calculadora('4')" class="cbotoes">4</button>
+                </span>
+                <span>
+                    <button onclick="calculadora('5')" class="cbotoes">5</button>
+                </span>
+                <span>
+                    <button onclick="calculadora('6')" class="cbotoes">6</button>
+                </span>
+                <span>
+                    <button onclick="sinais('-')" class="cbotoes">-</button>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <button onclick="calculadora('1')" class="cbotoes">1</button>
+                </span>
+                <span>
+                    <button onclick="calculadora('2')" class="cbotoes">2</button>
+                </span>
+                <span>
+                    <button onclick="calculadora('3')" class="cbotoes" id="ibotao3">3</button>
+                </span>
+                <span>
+                    <button onclick="sinais('+')" class="cbotoes" id="ibotaomais">+</button>
+                </span>
+            </div>
+            <div>
+                <span>
+                    <button onclick="calculadora('0')" class="cbotoes">0</button>
+                </span>
+                <span>
+                    <button onclick="calculadora('.')" class="cbotoes">.</button>
+                </span>
+                <span>
+                    <button onclick="resultados()" class="cbotoes">=</button>
+                </span>
+                <span>
+
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let primeiroN;
+        let sengundoN;
+        let operacoes;
+
+        function calculadora(numeros) { // c função generica
+            document.getElementById("ivisor").value += numeros;
+        }
+
+        function sinais(sin) {
+            primeiroN = document.getElementById("ivisor").value;
+            document.getElementById("ivisor").value = "";
+            operacoes = sin;
+        }
+
+        function resultados() {
+            sengundoN = document.getElementById("ivisor").value;
+            let aux
+            switch (operacoes) {
+                case "+":
+                    aux = Number(primeiroN) + Number(sengundoN);
+                    document.getElementById("ivisor").value = aux;
+                    break;
+                case "-":
+                    aux = Number(primeiroN) - Number(sengundoN);
+                    document.getElementById("ivisor").value = aux;
+                    break;
+                case "*":
+                    aux = Number(primeiroN) * Number(sengundoN);
+                    document.getElementById("ivisor").value = aux;
+                    break;
+                case "/":
+                    aux = Number(primeiroN) / Number(sengundoN);
+                    document.getElementById("ivisor").value = aux;
+                    break;
+
+                default:
+                    document.getElementById("ivisor").value = "ERRO";
+                    break;
+            }
+
+
+        }
+
+        function zerar() {
+            primeiroN = "";
+            operacoes = "";
+            document.getElementById("ivisor").value = "";
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
